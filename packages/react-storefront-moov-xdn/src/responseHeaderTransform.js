@@ -4,6 +4,7 @@
  */
 import { cache, cacheProxiedAssets as doCacheProxiedAssets, FAR_FUTURE, ONE_DAY } from './cache'
 import { redirectTo, redirectToHttps } from './redirect'
+import { API_VERSION, RESPONSE_TYPE } from 'react-storefront/router/headers'
 
 /**
  * Run this in moov_response_header_transform.js
@@ -13,7 +14,7 @@ export default function responseHeaderTransform({
 } = {}) {
 
   if (env.__static_origin_path__) {
-    headers.header('x-rsf-response-type', 'static')
+    headers.header(RESPONSE_TYPE, 'static')
     
     // It is important that the client never caches the servce-worker so that it always goes to the network
     // to check for a new one.
@@ -45,7 +46,7 @@ export default function responseHeaderTransform({
       headers.addHeader("set-cookie", env.SET_COOKIE)
     }
 
-    headers.addHeader('x-moov-api-version', __webpack_hash__)
+    headers.addHeader(API_VERSION, __webpack_hash__)
 
     // set headers and status from Response object
 
