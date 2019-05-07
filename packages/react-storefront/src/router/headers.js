@@ -1,4 +1,8 @@
 /**
+ * @license
+ * Copyright © 2017-2019 Moov Corporation.  All rights reserved.
+ */
+/**
  * Response header which designates an surrogate key by which the response can be
  * flushed from edge caches.
  *
