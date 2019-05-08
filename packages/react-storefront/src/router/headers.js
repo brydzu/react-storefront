@@ -53,3 +53,5 @@ export const XDN_VERSION = 'x-moov-xdn-version'
  * Request header that when present will make RSF return a JSON summary of the routes.
  */
 export const ROUTES = 'x-rsf-routes'
+
+export default null

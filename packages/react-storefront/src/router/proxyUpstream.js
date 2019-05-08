@@ -2,7 +2,7 @@
  * @license
  * Copyright © 2017-2018 Moov Corporation.  All rights reserved.
  */
-import { RESPONSE_TYPE, HANDLER } from 'react-storefront/router/headers'
+import { RESPONSE_TYPE, HANDLER } from './headers'
 
 // The default callback used when none is provided.  Simply returns the upstream HTML unaltered.
 const perfectProxy = (_params, _request, response) => response.send()
