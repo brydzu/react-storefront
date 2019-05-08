@@ -74,6 +74,24 @@ yarn release
 
 ## Changelog
 
+### 6.14.0
+
+- You can now define a surrogate key for each route using:
+
+```js
+new Router().get(
+  "/p/:1",
+  cache({
+    server: {
+      surrogateKey: (params, request) => {
+        return "product";
+      }
+    }
+  }),
+  fromServer("./path/to/handler")
+);
+```
+
 ### 6.13.0
 
 - Added `environment` module with `isClient` and `isServer` functions that allows you to detect whether your code is running on the client or the server.
