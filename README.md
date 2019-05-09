@@ -82,6 +82,8 @@ yarn release
 <script src="http://my.domain.com/.powerlinks.js" defer />
 ```
 
+- Added the ability to overwrite `cache()` route handler with `response.set('cache-control', '...')`.
+
 ### 6.13.0
 
 - Added `environment` module with `isClient` and `isServer` functions that allows you to detect whether your code is running on the client or the server.
