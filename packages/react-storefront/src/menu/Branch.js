@@ -1,3 +1,7 @@
+/**
+ * @license
+ * Copyright © 2017-2019 Moov Corporation.  All rights reserved.
+ */
 import React, { Component, Fragment } from 'react'
 import { observer, inject } from 'mobx-react'
 import MenuList from '@material-ui/core/MenuList'

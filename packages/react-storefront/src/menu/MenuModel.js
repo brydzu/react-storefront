@@ -1,3 +1,7 @@
+/**
+ * @license
+ * Copyright © 2017-2019 Moov Corporation.  All rights reserved.
+ */
 import { types } from 'mobx-state-tree'
 
 export const MenuItemModel = types

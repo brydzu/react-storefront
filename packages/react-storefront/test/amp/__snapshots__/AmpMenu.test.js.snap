@@ -53,7 +53,7 @@ exports[`AmpMenu should render 1`] = `
                           <WithStyles(inject-Link) className="RSFAmpMenu-item-53" to="/s/1">
                             <inject-Link className="RSFAmpMenu-item-53" to="/s/1" classes={{...}}>
                               <Link className="RSFAmpMenu-item-53" to="/s/1" classes={{...}} history={{...}} router={{...}} location={{...}} anchorProps={{...}}>
-                                <a data-moov-link="on" className="RSFLink-root-102 RSFAmpMenu-item-53" style={[undefined]} onClick={[Function]} href="https://localhost/s/1">
+                                <a data-moov-link="on" className="RSFLink-root-102 RSFAmpMenu-item-53" style={[undefined]} onClick={[Function]} href="/s/1">
                                   Subcategory 1
                                 </a>
                               </Link>
@@ -62,7 +62,7 @@ exports[`AmpMenu should render 1`] = `
                           <WithStyles(inject-Link) className="RSFAmpMenu-item-53" to="/s/2">
                             <inject-Link className="RSFAmpMenu-item-53" to="/s/2" classes={{...}}>
                               <Link className="RSFAmpMenu-item-53" to="/s/2" classes={{...}} history={{...}} router={{...}} location={{...}} anchorProps={{...}}>
-                                <a data-moov-link="on" className="RSFLink-root-102 RSFAmpMenu-item-53" style={[undefined]} onClick={[Function]} href="https://localhost/s/2">
+                                <a data-moov-link="on" className="RSFLink-root-102 RSFAmpMenu-item-53" style={[undefined]} onClick={[Function]} href="/s/2">
                                   Subcategory 2
                                 </a>
                               </Link>
@@ -108,7 +108,7 @@ exports[`AmpMenu should render 1`] = `
                           <WithStyles(inject-Link) className="RSFAmpMenu-item-53" to="/s/1">
                             <inject-Link className="RSFAmpMenu-item-53" to="/s/1" classes={{...}}>
                               <Link className="RSFAmpMenu-item-53" to="/s/1" classes={{...}} history={{...}} router={{...}} location={{...}} anchorProps={{...}}>
-                                <a data-moov-link="on" className="RSFLink-root-102 RSFAmpMenu-item-53" style={[undefined]} onClick={[Function]} href="https://localhost/s/1">
+                                <a data-moov-link="on" className="RSFLink-root-102 RSFAmpMenu-item-53" style={[undefined]} onClick={[Function]} href="/s/1">
                                   Subcategory 1
                                 </a>
                               </Link>
@@ -117,7 +117,7 @@ exports[`AmpMenu should render 1`] = `
                           <WithStyles(inject-Link) className="RSFAmpMenu-item-53" to="/s/2">
                             <inject-Link className="RSFAmpMenu-item-53" to="/s/2" classes={{...}}>
                               <Link className="RSFAmpMenu-item-53" to="/s/2" classes={{...}} history={{...}} router={{...}} location={{...}} anchorProps={{...}}>
-                                <a data-moov-link="on" className="RSFLink-root-102 RSFAmpMenu-item-53" style={[undefined]} onClick={[Function]} href="https://localhost/s/2">
+                                <a data-moov-link="on" className="RSFLink-root-102 RSFAmpMenu-item-53" style={[undefined]} onClick={[Function]} href="/s/2">
                                   Subcategory 2
                                 </a>
                               </Link>
