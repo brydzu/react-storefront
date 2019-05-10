@@ -124,7 +124,7 @@ new Router()
 import Offline from 'react-storefront/Offline'
 
 // then in the render method...
-;<Pages
+<Pages
   components={universal => ({
     // ...
     Offline
