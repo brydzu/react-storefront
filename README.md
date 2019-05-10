@@ -84,6 +84,14 @@ yarn release
 
 - Added the ability to overwrite `cache()` route handler with `response.set('cache-control', '...')`.
 
+### 6.13.2
+
+- Improved JSS class name generation in development
+
+### 6.13.1
+
+- Fixed a bug where links in the main menu were not rendered properly for SEO.
+
 ### 6.13.0
 
 - Added `environment` module with `isClient` and `isServer` functions that allows you to detect whether your code is running on the client or the server.
@@ -124,12 +132,18 @@ new Router()
 import Offline from 'react-storefront/Offline'
 
 // then in the render method...
-<Pages
-  components={universal => ({
-    // ...
-    Offline
-  })}
-/>
+class App extends Component {
+  render() {
+    return (
+      <Pages
+        components={universal => ({
+          // ...
+          Offline
+        })}
+      />
+    )
+  }
+}
 ```
 
 ### 6.11.0
