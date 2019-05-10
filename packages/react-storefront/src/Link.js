@@ -11,10 +11,19 @@ import VisibilitySensor from 'react-visibility-sensor'
 import withStyles from '@material-ui/core/styles/withStyles'
 import classnames from 'classnames'
 import dataProps from './utils/dataProps'
-import { autorun } from 'mobx'
 
 export const styles = {
   root: {}
+}
+
+let absolute = false
+
+/**
+ * Set to `true` to render all links as absolute URLs for SEO purposes.
+ * @param {Boolean} useAbsolute
+ */
+export function useAbsoluteLinks(useAbsolute) {
+  absolute = useAbsolute
 }
 
 @withStyles(styles, { name: 'RSFLink' })
@@ -123,7 +132,7 @@ export default class Link extends Component {
       ref: this.el,
       style,
       onClick: this.onClick,
-      href: absoluteURL(to, location) // we always render absolute URLs for SEO purposes
+      href: absolute ? absoluteURL(to, location) : to
     }
 
     if (prefetch) {
